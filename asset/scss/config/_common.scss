@@ -101,18 +101,13 @@ body {
   height: 100%;
 }
 
+@media screen and (min-width: 751px) {
+  body{
+    background-color: #676767;
+  }
+}
 @media screen and (max-width: 750px) {
   body{
     background-color: #ccc;
-  }
-}
-@media screen and (max-width: 1400px) {
-  body{
-    background-color: #9b9b9b;
-  }
-}
-@media screen and (max-width: 1920px) {
-  body{
-    background-color: #666666;
   }
 }
