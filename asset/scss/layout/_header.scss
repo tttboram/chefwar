@@ -1,0 +1,51 @@
+header {
+  height: 56px;
+  background-color: $background;
+  box-sizing: border-box;
+  &.white{
+    background-color: #fff;
+  }
+
+  .inner {
+    position: relative;
+    padding: 16px 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    .left{
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      .logo {
+        width: 23px;
+        height: 22px;
+        margin-right: 7.5px;
+      }
+    }
+
+    .menu-list {
+      display: none;
+      position: absolute;
+      top: 45px;
+      right: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #fff;
+      width: 144px;
+      box-sizing: border-box;
+
+      li {
+        padding: 10px 20px;
+        @include fontStyle(16px, 19.09px, 400, $gray500);
+        touch-action: manipulation; 
+
+        &.on {
+          @include fontStyle(16px, 19.09px, 700, $primary);
+        }
+      }
+    }
+  }
+}
+
