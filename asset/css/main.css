@@ -413,10 +413,173 @@ body {
   body {
     background-color: #676767;
   }
-  .web {
+  .is-web {
     display: block;
   }
-  .mobile {
+  .is-web.main-bg {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: url("../../asset/image/common/bg.png") no-repeat 50% 50%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .is-web .float-logo {
+    position: absolute;
+    z-index: 100;
+    top: 2em;
+    left: 1.5em;
+  }
+  .is-web .float-banner {
+    position: absolute;
+    z-index: 100;
+    top: 1em;
+    right: 1.5em;
+  }
+  .is-web .sec-content {
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+    width: 45%;
+    height: 67vh;
+    display: flex;
+    border: 2px solid #000;
+    margin: 2em 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .is-web .sec-content:after {
+    content: "";
+    z-index: 500;
+    background: url("../../asset/image/common/deco_leaf.png") no-repeat 0 0;
+    background-size: contain;
+    width: 35%;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .is-web .sec-content .cnt-img {
+    display: block;
+  }
+  .is-web .sec-content .cnt-device {
+    display: flex;
+    width: 63%;
+  }
+  .is-web .sec-content .cnt-input {
+    width: 590px;
+    position: relative;
+  }
+  .is-web .sec-content .cnt-input .input-010 {
+    height: 70px;
+  }
+  .is-web .sec-content .cnt-input .input-cover {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .is-web .sec-content .cnt-input .input-here {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 450px;
+    height: 70px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    text-align: center;
+    font-size: 50px;
+  }
+  .is-web .sec-content .cnt-checklist {
+    position: relative;
+    text-align: left;
+    width: 61%;
+    margin: 10px 0;
+  }
+  .is-web .sec-content .cnt-checklist .btn-more {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .is-web .sec-content .cnt-action {
+    padding: 10px 0;
+  }
+  .is-web .sec-content .cnt-store {
+    text-align: center;
+  }
+  .is-web .deco-left {
+    z-index: 10;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .is-web .deco-left .character-1 {
+    position: absolute;
+    left: 26.5%;
+    top: 25.5%;
+  }
+  .is-web .deco-left .character-2 {
+    position: absolute;
+    left: 18.5%;
+    top: 30.5%;
+  }
+  .is-web .deco-left .character-3 {
+    position: absolute;
+    left: 5%;
+    top: 30.5%;
+  }
+  .is-web .deco-left .character-4 {
+    position: absolute;
+    left: -9.5%;
+    top: 53%;
+  }
+  .is-web .deco-right {
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .is-web .deco-right .character-1 {
+    position: absolute;
+    right: 29.5%;
+    top: 27.8%;
+  }
+  .is-web .deco-right .character-2 {
+    position: absolute;
+    right: 25%;
+    top: 23.5%;
+  }
+  .is-web .deco-right .character-3 {
+    position: absolute;
+    right: 17.7%;
+    top: 32.5%;
+  }
+  .is-web .deco-right .character-4 {
+    position: absolute;
+    right: 1%;
+    top: 37.5%;
+  }
+  .is-web .deco-right .character-5 {
+    position: absolute;
+    right: 3.5%;
+    top: 55.5%;
+  }
+  .is-web .deco-right .character-6 {
+    position: absolute;
+    right: -3.3%;
+    top: 53.5%;
+  }
+  .is-mobile {
     display: none;
   }
 }
@@ -424,10 +587,10 @@ body {
   body {
     background-color: #ccc;
   }
-  .web {
+  .is-web {
     display: none;
   }
-  .mobile {
+  .is-mobile {
     display: block;
   }
 }
