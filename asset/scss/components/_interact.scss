@@ -280,3 +280,158 @@ input[type="checkbox"] {
     top: -41px;
   }
 }
+
+//애니메이션
+@keyframes move1 {
+  0% {
+    margin-left: -3px;
+    margin-top: -3px;
+  }
+  30% {
+    margin-left: 0px;
+    margin-top: 0;
+  }
+  60% {
+    margin-left: 3px;
+    margin-top: 3px;
+  }
+  100% {
+    margin-left: -3px;
+    margin-top: -3px;
+  }
+}
+//애니메이션
+@keyframes move2 {
+  0% {
+    margin-left: 3px;
+    margin-top: 3px;
+  }
+  30% {
+    margin-left: 0px;
+    margin-top: 0;
+  }
+  60% {
+    margin-left: -3px;
+    margin-top: -3px;
+  }
+  100% {
+    margin-left: 3px;
+    margin-top: 3px;
+  }
+}
+//애니메이션
+@keyframes move3 {
+  0% {
+    margin-left: 0px;
+    margin-top: 0;
+  }
+  30% {
+    margin-left: -3px;
+    margin-top: -3px;
+  }
+  60% {
+    margin-left: 3px;
+    margin-top: 3px;
+  }
+  100% {
+    margin-left: 0px;
+    margin-top: 0;
+  }
+}
+//애니메이션
+@keyframes move4 {
+  0% {
+    margin-left: 0px;
+    margin-top: 0;
+  }
+  20% {
+    margin-left: 3px;
+    margin-top: 3px;
+  }
+  80% {
+    margin-left: -3px;
+    margin-top: -3px;
+  }
+  100% {
+    margin-left: 0px;
+    margin-top: 0;
+  }
+}
+
+
+//애니메이션
+@keyframes move11 {
+  0% {
+    margin-right: -3px;
+    margin-top: -3px;
+  }
+  30% {
+    margin-right: 0px;
+    margin-top: 0;
+  }
+  60% {
+    margin-right: 3px;
+    margin-top: 3px;
+  }
+  100% {
+    margin-right: -3px;
+    margin-top: -3px;
+  }
+}
+//애니메이션
+@keyframes move12 {
+  0% {
+    margin-right: 3px;
+    margin-top: 3px;
+  }
+  30% {
+    margin-right: 0px;
+    margin-top: 0;
+  }
+  60% {
+    margin-right: -3px;
+    margin-top: -3px;
+  }
+  100% {
+    margin-right: 3px;
+    margin-top: 3px;
+  }
+}
+//애니메이션
+@keyframes move13 {
+  0% {
+    margin-right: 0px;
+    margin-top: 0;
+  }
+  30% {
+    margin-right: -3px;
+    margin-top: -3px;
+  }
+  60% {
+    margin-right: 3px;
+    margin-top: 3px;
+  }
+  100% {
+    margin-right: 0px;
+    margin-top: 0;
+  }
+}
+//애니메이션
+@keyframes move14 {
+  0% {
+    margin-right: 0px;
+    margin-top: 0;
+  }
+  20% {
+    margin-right: 3px;
+    margin-top: 3px;
+  }
+  80% {
+    margin-right: -3px;
+    margin-top: -3px;
+  }
+  100% {
+    margin-right: 0px;
+    margin-top: 0;
+  }
+}
