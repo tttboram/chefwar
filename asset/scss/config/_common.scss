@@ -164,18 +164,18 @@ body {
       .cnt-device{
         display: flex;
         width: 68%;
-        margin: 0 0 10px
-        /* 기본 radio 버튼 숨기기 */
-        input[type="radio"] {
-          position: absolute;
-          width: 0;
-          height: 0;
-          opacity: 0;
-        }
+        margin: 0 0 10px;
         /* 라벨 스타일링 */
         .radio {
           display: inline-block;
           position: relative;
+          /* 기본 radio 버튼 숨기기 */
+          input[type="radio"] {
+            position: absolute;
+            width: 0;
+            height: 0;
+            opacity: 0;
+          }
         }
         .radio + .radio{
           margin-left: 20px;
@@ -348,5 +348,293 @@ body {
   }
   .is-mobile{
     display: block;
+    &.main-bg{
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
+      background: url("../../asset/image/common-m/bg.png") no-repeat 50% 50%;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+          align-items: center;
+          flex-direction: column;
+    }
+    .float-logo{
+      position: absolute;
+      z-index: 100;
+      top: auto;
+      bottom:2em;
+      left:1.5em;
+      img{
+        width: 100%;
+      }
+    }
+    // .float-banner{
+    //   position: absolute;
+    //   z-index: 100;
+    //   top:1em;
+    //   right:1.5em;
+    // }
+    .sec-title{
+      text-align: center;
+      img{
+        width: 90%;
+      }
+    }
+    .sec-content{
+      z-index: 100;
+      background-color: rgba(0, 0, 0, 0.75);
+      border-radius:15px;
+      width: 90%;
+      height: 60vh;
+      display: flex;
+      border: 2px solid #000;
+      margin: 4em 0 0 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  
+      // &:after{
+      //   content:"";
+      //   z-index: 500;
+      //   background:url("../../asset/image/common/deco_leaf.png") no-repeat 0 0;
+      //   background-size: contain;
+      //   width: 35%;
+      //   height: 100vh;
+      //   display: block;
+      //   position: absolute;
+      //   left: 0;
+      //   top: 0;
+      // }
+      .cnt-img{
+        display: block;
+        img{
+          width: 100%;
+        }
+      }
+      .cnt-device{
+        display: flex;
+        width: 100%;
+        margin: 0 0 10px 30px;
+        /* 라벨 스타일링 */
+        .radio {
+          display: inline-block;
+          position: relative;
+          /* 기본 radio 버튼 숨기기 */
+          input[type="radio"] {
+            position: absolute;
+            width: 0;
+            height: 0;
+            opacity: 0;
+          }
+        }
+        .radio + .radio{
+          margin-left: 20px;
+        }
+
+        /* 선택되지 않은 상태 - 기본 스타일 */
+        .radio input[type="radio"] + label {
+          display: inline-block;
+          position: relative;
+          cursor: pointer;
+          padding-left: 30px;
+          img{
+            height: 22px;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 12px;
+            height: 12px;
+            border: 3px solid #fff; /* 파란색 테두리 */
+            border-radius: 12px; /* 둥근 테두리 */
+            pointer-events: none;
+          }
+        }
+
+        /* 선택되었을 때 테두리 효과 */
+        .radio input[type="radio"]:checked + label::after {
+          content: "";
+          position: absolute;
+          top: 5px;
+          left: 3px;
+          width: 12px;
+          height: 12px;
+          background-color: #f00;
+          border-radius: 12px; /* 둥근 테두리 */
+          pointer-events: none;
+        }
+
+      }
+      .cnt-input{
+        width: 90%;
+        position: relative;
+        .input-010{
+          height: 33px;
+          width: 70px;
+        }
+        .input-cover{
+          position: absolute;
+          right:0;
+          top:0;
+          height: 33px;
+        }
+        .input-here{
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: calc(100% - 70px);
+          height: 34px;
+          padding:0;
+          margin: 0;
+          border: none;
+          text-align: center;
+          font-size: 24px;
+        }
+      }
+      .cnt-checklist{
+        position: relative;
+        text-align: left;
+        width: 90%;
+        margin: 10px 0;
+        .btn-more{
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+        /* 라벨 스타일링 */
+        .checkbox {
+          display: block;
+          position: relative;
+          /* 기본 checkbox 버튼 숨기기 */
+          input[type="checkbox"] {
+            position: absolute;
+            width: 0;
+            height: 0;
+            opacity: 0;
+          }
+        }
+
+        /* 선택되지 않은 상태 - 기본 스타일 */
+        .checkbox input[type="checkbox"] + label {
+          display: inline-block;
+          position: relative;
+          cursor: pointer;
+          padding-left: 20px;
+          img{
+            height: 12px;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border: 2px solid #fff; /* 파란색 테두리 */
+            border-radius: 12px; /* 둥근 테두리 */
+            pointer-events: none;
+          }
+        }
+
+        /* 선택되었을 때 테두리 효과 */
+        .checkbox input[type="checkbox"]:checked + label::after {
+          content: "";
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          width: 8px;
+          height: 8px;
+          background-color: #f00;
+          border-radius: 12px; /* 둥근 테두리 */
+          pointer-events: none;
+        }
+      }
+      .cnt-action{
+        padding: 10px 0;
+      }
+      .cnt-store{
+        text-align: center;
+      }
+    }
+    .deco-left{
+      z-index: 10;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      .character-1{
+        position: absolute;
+        left: 26.5%;
+        top: 25.5%;
+        animation: move1 1.5s infinite ease-in-out; /* 애니메이션 적용 */
+      }
+      .character-2{
+        position: absolute;
+        left: 18.5%;
+        top: 30.5%;
+        animation: move2 2.5s infinite ease-in-out; /* 애니메이션 적용 */
+      }
+      .character-3{
+        position: absolute;
+        left: 5%;
+        top: 30.5%;
+        animation: move3 1.5s infinite ease-in-out; /* 애니메이션 적용 */
+      }
+      .character-4{
+        position: absolute;
+        left: -9.5%;
+        top: 53%;
+        animation: move4 2.5s infinite ease-in-out; /* 애니메이션 적용 */
+      }
+    }
+    .deco-right{
+      z-index: 10;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100vw;
+      height: 100vh;
+      .character-1{
+        position: absolute;
+        right: 29.5%;
+        top: 27.8%;
+        animation: move11 1.5s infinite ease-in-out; /* 애니메이션 적용 */
+      }
+      .character-2{
+        position: absolute;
+        right: 25%;
+        top: 23.5%;
+        animation: move12 2.5s infinite ease-in-out; /* 애니메이션 적용 */
+      }
+      .character-3{
+        position: absolute;
+        right: 17.7%;
+        top: 32.5%;
+        animation: move13 2.5s infinite ease-in-out; /* 애니메이션 적용 */
+      }
+      .character-4{
+        position: absolute;
+        right: 1%;
+        top: 37.5%;
+        animation: move14 1.5s infinite ease-in-out; /* 애니메이션 적용 */
+      }
+      .character-5{
+        position: absolute;
+        right: 3.5%;
+        top: 55.5%;
+        animation: move11 2.0s infinite ease-in-out; /* 애니메이션 적용 */
+      }
+      .character-6{
+        position: absolute;
+        right: -3.3%;
+        top: 53.5%;
+        animation: move12 2.5s infinite ease-in-out; /* 애니메이션 적용 */
+      }
+    }
   }
 }

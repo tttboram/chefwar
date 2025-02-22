@@ -62,14 +62,24 @@ function menuListColor() {
 
 //팝업창 띄우기
 function popupPosition() {
-  $('.popup').css({
-    "top": (($(window).height() - $('.popup').outerHeight()) / 2 + $(window).scrollTop()) + "px",
-    "left": (($('body').width() - $('.popup').outerWidth()) / 2 + $(window).scrollLeft()) + "px",
+  var $popup = $('.popup');
+  var winHeight = $(window).height();
+  var popupHeight = $popup.outerHeight();
+  var scrollTop = $(window).scrollTop();
+
+  // 팝업이 너무 크면 상단 마진을 조정하여 조금 더 위쪽에 배치
+  var topPosition = (winHeight - popupHeight) / 2 + scrollTop;
+  if (popupHeight > winHeight * 0.8) {
+    topPosition = scrollTop + 50; // 너무 크면 상단에서 50px 띄우기
+  }
+  $popup.css({
+    "top": topPosition + "px",
+    "left": (($('body').width() - $popup.outerWidth()) / 2 + $(window).scrollLeft()) + "px",
   });
-};
+}
 
 function popupEvent() {
-  var popupBtn = $('.popup-open a');
+  var popupBtn = $('.act-popup');
 
   popupBtn.on('click', function () {
 
@@ -80,7 +90,7 @@ function popupEvent() {
 }
 
 function popupClose() {
-  var popupClose = $('.popup-cont .close');
+  var popupClose = $('.pop-close, .pop-ok');
 
   popupClose.on('click', function () {
     $('.popup').css('display', 'none');
