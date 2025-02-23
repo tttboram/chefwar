@@ -406,6 +406,14 @@ body {
           align-items: center;
           flex-direction: column;
     }
+    .mobile-wrap{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      overflow: scroll;
+    }
     .float-logo{
       position: relative;
       z-index: 100;
@@ -422,7 +430,8 @@ body {
     // }
     .sec-title{
       text-align: center;
-      padding: 30px 0 0 0;
+      padding: 50px 0 0 0;
+      z-index: 9;
       img{
         width: 90%;
       }
@@ -432,7 +441,7 @@ body {
       background-color: rgba(0, 0, 0, 0.75);
       border-radius:15px;
       width: 90%;
-      min-height: 50vh;
+      //min-height: 50vh;
       border: 2px solid #000;
       margin: 6em 0 0 0;
       padding: 0 0 10px 0;
@@ -453,7 +462,7 @@ body {
       //   top: 0;
       // }
       .cnt-img{
-        display: block;
+        display: contents;
         overflow: hidden;
         img{
           width: 100%;
@@ -633,32 +642,32 @@ body {
       }
       .character-2{
         position: absolute;
-        left: 33%;
-        top: 17.5%;
+        left: 34%;
+        top: 20.5%;
         animation: move2 2.5s infinite ease-in-out; /* 애니메이션 적용 */
         img{
-          width: 75px;
-          height: 91px;
+          width: 63px;
+          height: 76px;
         }
       }
       .character-3{
         position: absolute;
-        left: 12%;
-        top: 15.5%;
+        left: 14%;
+        top: 19%;
         animation: move3 1.5s infinite ease-in-out; /* 애니메이션 적용 */
         img{
-          width: 153px;
-          height: 153px;
+          width: 128px;
+          height: 128px;
         }
       }
       .character-4{
         position: absolute;
-        left: -18.5%;
-        top: 17%;
+        left: -15.5%;
+        top: 20%;
         animation: move4 2.5s infinite ease-in-out; /* 애니메이션 적용 */
         img{
-          width: 215px;
-          height: 182px;
+          width: 179px;
+          height: 151px;
         }
       }
     }
@@ -671,12 +680,12 @@ body {
       height: 100vh;
       .character-1{
         position: absolute;
-        right: 33.5%;
-        top: 17.8%;
+        right: 35.5%;
+        top: 20.8%;
         animation: move11 1.5s infinite ease-in-out; /* 애니메이션 적용 */
         img{
-          width: 65px;
-          height: 83px;
+          width: 54px;
+          height: 70px;
         }
       }
       .character-2{
@@ -693,12 +702,12 @@ body {
       }
       .character-4{
         position: absolute;
-        right: 7%;
-        top: 17.5%;
+        right: 10%;
+        top: 20.5%;
         animation: move14 1.5s infinite ease-in-out; /* 애니메이션 적용 */
         img{
-          width: 150px;
-          height: 151px;
+          width: 125px;
+          height: 125px;
         }
       }
       .character-5{
@@ -709,12 +718,12 @@ body {
       }
       .character-6{
         position: absolute;
-        right: -10.3%;
-        top: 19.5%;
+        right: -8.3%;
+        top: 22.5%;
         animation: move12 2.5s infinite ease-in-out; /* 애니메이션 적용 */
         img{
-          width: 176px;
-          height: 176px;
+          width: 147px;
+          height: 147px;
         }
       }
     }
