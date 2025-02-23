@@ -446,7 +446,6 @@ body {
     border-radius: 15px;
     width: 45%;
     height: 67vh;
-    display: flex;
     border: 2px solid #000;
     margin: 2em 0 0 0;
     display: flex;
@@ -547,11 +546,56 @@ body {
     text-align: left;
     width: 61%;
     margin: 10px 0;
+    /* 라벨 스타일링 */
+    /* 선택되지 않은 상태 - 기본 스타일 */
+    /* 선택되었을 때 테두리 효과 */
   }
   .is-web .sec-content .cnt-checklist .btn-more {
     position: absolute;
     right: 0;
     top: 0;
+  }
+  .is-web .sec-content .cnt-checklist .checkbox {
+    display: block;
+    position: relative;
+    /* 기본 checkbox 버튼 숨기기 */
+  }
+  .is-web .sec-content .cnt-checklist .checkbox input[type=checkbox] {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  .is-web .sec-content .cnt-checklist .checkbox input[type=checkbox] + label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding-left: 20px;
+  }
+  .is-web .sec-content .cnt-checklist .checkbox input[type=checkbox] + label img {
+    height: 12px;
+  }
+  .is-web .sec-content .cnt-checklist .checkbox input[type=checkbox] + label::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff; /* 파란색 테두리 */
+    border-radius: 12px; /* 둥근 테두리 */
+    pointer-events: none;
+  }
+  .is-web .sec-content .cnt-checklist .checkbox input[type=checkbox]:checked + label::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    background-color: #f00;
+    border-radius: 12px; /* 둥근 테두리 */
+    pointer-events: none;
   }
   .is-web .sec-content .cnt-action {
     padding: 10px 0;
@@ -662,11 +706,9 @@ body {
     flex-direction: column;
   }
   .is-mobile .float-logo {
-    position: absolute;
+    position: relative;
     z-index: 100;
-    top: auto;
-    bottom: 2em;
-    left: 1.5em;
+    padding: 20px 0 0 0;
   }
   .is-mobile .float-logo img {
     width: 100%;
@@ -682,19 +724,21 @@ body {
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 15px;
     width: 90%;
-    height: 60vh;
-    display: flex;
+    min-height: 50vh;
     border: 2px solid #000;
-    margin: 4em 0 0 0;
+    margin: 6em 0 0 0;
+    padding: 0 0 10px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
   }
   .is-mobile .sec-content .cnt-img {
     display: block;
+    overflow: hidden;
   }
   .is-mobile .sec-content .cnt-img img {
     width: 100%;
+    margin-top: -30px;
   }
   .is-mobile .sec-content .cnt-device {
     display: flex;
@@ -805,9 +849,10 @@ body {
     position: relative;
     cursor: pointer;
     padding-left: 20px;
+    height: 10px;
   }
   .is-mobile .sec-content .cnt-checklist .checkbox input[type=checkbox] + label img {
-    height: 12px;
+    height: 9px;
   }
   .is-mobile .sec-content .cnt-checklist .checkbox input[type=checkbox] + label::before {
     content: "";
@@ -823,19 +868,29 @@ body {
   .is-mobile .sec-content .cnt-checklist .checkbox input[type=checkbox]:checked + label::after {
     content: "";
     position: absolute;
-    top: 2px;
+    top: 4px;
     left: 2px;
-    width: 8px;
-    height: 8px;
+    width: 10px;
+    height: 10px;
     background-color: #f00;
     border-radius: 12px; /* 둥근 테두리 */
     pointer-events: none;
   }
   .is-mobile .sec-content .cnt-action {
     padding: 10px 0;
+    text-align: center;
+  }
+  .is-mobile .sec-content .cnt-action img {
+    width: 90%;
   }
   .is-mobile .sec-content .cnt-store {
     text-align: center;
+  }
+  .is-mobile .sec-content .cnt-store a {
+    width: 23%;
+  }
+  .is-mobile .sec-content .cnt-store a img {
+    width: 100%;
   }
   .is-mobile .deco-left {
     z-index: 10;
@@ -925,11 +980,7 @@ input[type=checkbox] + label {
   height: 16px;
   margin: 4px;
   box-sizing: border-box;
-  border: 1px solid #444;
   border-radius: 2px;
-}
-input[type=checkbox]:checked + label {
-  background-color: #fff;
 }
 input[type=checkbox]:checked + label:after {
   content: "";
@@ -1372,6 +1423,89 @@ input[type=checkbox]:checked + label:after {
   right: -20px;
 }
 
+@media screen and (max-width: 750px) {
+  .popup {
+    display: none;
+    z-index: 990;
+    position: absolute;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 40px);
+    border-radius: 8px;
+  }
+  .popup.pop-event, .popup.pop-terms {
+    width: 100%;
+  }
+  .popup .popup-cont {
+    position: relative;
+    padding: 32px 0 16px 0;
+    background: #661f00;
+    border: 4px solid #ffc000;
+    border-radius: 30px;
+  }
+  .popup .popup-cont .pre-event {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: url("../../asset/image/common-m/pop_img01.png") no-repeat 50% 0;
+    background-size: 100%;
+  }
+  .popup .popup-cont .pre-event img {
+    width: 100%;
+  }
+  .popup .popup-cont .pre-event .pre-event-msg {
+    width: calc(100% - 40px);
+  }
+  .popup .popup-cont .pre-event .event-img {
+    height: 42vw;
+  }
+  .popup .popup-cont .notice-msg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 170px 0 30px 0;
+  }
+  .popup .popup-cont .notice-msg:after {
+    content: "";
+    background: url("../../asset/image/common-m/pop_img02.png") no-repeat 50% 0;
+    background-size: cover;
+    width: 270px;
+    height: 211px;
+    position: absolute;
+    top: -40px;
+  }
+  .popup .popup-cont .notice-msg img {
+    width: 80%;
+  }
+  .popup .popup-cont .terms-text {
+    text-align: center;
+  }
+  .popup .popup-cont .terms-text img {
+    width: 95%;
+  }
+  .popup .popup-cont .popup-btn {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+  }
+  .popup .popup-cont .popup-btn img {
+    width: 80%;
+  }
+  .popup .popup-cont .popup-btn a + a {
+    margin-top: 15px;
+  }
+  .popup .popup-cont .pop-close {
+    position: absolute;
+    z-index: 991;
+    top: -20px;
+    right: -20px;
+  }
+  .popup .popup-cont .pop-close img {
+    width: 40px;
+  }
+}
 .dimmed {
   display: none;
   position: absolute;

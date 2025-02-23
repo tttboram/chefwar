@@ -56,17 +56,18 @@
               <!-- <img src="../asset/image/common/cont_input_02.png" alt="" class="input-cover"> -->
             </div>
             <div class="cnt-checklist">
-              <div class="radio">
-                <input type="radio" id="seleca-agree1" name="select-store2"><label for="seleca-agree11"><img src="../asset/image/common/cont_text_03.png" alt=""></label>
+              <div class="checkbox">
+                <input type="checkbox" id="select-agree1" name="select-store3"><label for="select-agree1"><img src="../asset/image/common/cont_text_03.png" alt=""></label>
               </div>
-              <div class="radio">
-                <input type="radio" id="seleca-agree2" name="select-store2"><label for="seleca-agree2"><img src="../asset/image/common/cont_text_04.png" alt=""></label>
+              <div class="checkbox">
+                <input type="checkbox" id="select-agree2" name="select-store3"><label for="select-agree2"><img src="../asset/image/common/cont_text_04.png" alt=""></label>
               </div>
-              <div class="radio">
-                <input type="radio" id="seleca-agree3" name="select-store2"><label for="seleca-agree3"><img src="../asset/image/common/cont_text_05.png" alt=""></label>
+              <div class="checkbox">
+                <input type="checkbox" id="select-agree3" name="select-store3"><label for="select-agree3"><img src="../asset/image/common/cont_text_05.png" alt=""></label>
               </div>
               <a href="#pop-terms" class="btn-more act-popup" data-target="pop-terms"><img src="../asset/image/common/btn_more.png" alt="자세히 보기"></a>
             </div>
+
             <div class="cnt-action">
               <a href="#pop-event" class="act-popup" data-target="pop-event"><img src="../asset/image/common/btn_submit.png" alt="사전예약 신청하기"></a>
             </div>
@@ -186,11 +187,6 @@
           <div class="character-5"><img src="../asset/image/common-m/ingr_05.png" alt=""></div>
           <div class="character-6"><img src="../asset/image/common-m/ingr_06.png" alt=""></div>
         </div>
-          <!-- 좌측 로고 -->
-          <div class="float-logo">
-            <img src="../asset/image/common-m/logo_CHEF.png" alt="">
-          </div>
-          <!-- 우측 배너 -->
           
           <!-- 상단 타이틀 -->
           <div class="sec-title">
@@ -224,10 +220,10 @@
               <div class="checkbox">
                 <input type="checkbox" id="select-agree6" name="select-store4"><label for="select-agree6"><img src="../asset/image/common-m/cont_text_05.png" alt=""></label>
               </div>
-              <a href="#pop-terms" class="btn-more act-popup" data-target="pop-terms"><img src="../asset/image/common-m/btn_more.png" alt="자세히 보기"></a>
+              <a href="#pop-terms-m" class="btn-more act-popup" data-target="pop-terms-m"><img src="../asset/image/common-m/btn_more.png" alt="자세히 보기"></a>
             </div>
             <div class="cnt-action">
-              <a href="#pop-event" class="act-popup" data-target="pop-event"><img src="../asset/image/common-m/btn_submit.png" alt="사전예약 신청하기"></a>
+              <a href="#pop-event-m" class="act-popup" data-target="pop-event-m"><img src="../asset/image/common-m/btn_submit.png" alt="사전예약 신청하기"></a>
             </div>
             <div class="cnt-store">
               <a href="#none" class="btn-more"><img src="../asset/image/common-m/btn_01.png" alt=""></a>
@@ -237,14 +233,19 @@
             </div>
           </div>
 
+          <!-- 좌측 로고 -->
+          <div class="float-logo">
+            <img src="../asset/image/common-m/logo_CHEF.png" alt="">
+          </div>
+          <!-- 우측 배너 -->
           <!-- POP MESSAGE #사전예약하고 보상받기 -->
-          <div class="popup pop-event">
+          <div class="popup pop-event-m">
             <div class="popup-cont">
               <a href="#none" class="pop-close"><img src="../asset/image/common-m/btn_close.png" alt=""></a>
               <div class="pre-event">
                 <img src="../asset/image/common-m/text_pop01.png" alt="">
                 <div class="event-img"></div>
-                <img src="../asset/image/common-m/text_pop02.png" alt="">                
+                <img src="../asset/image/common-m/text_pop02.png" alt="" class="pre-event-msg">                
               </div>
               <div class="popup-btn">
                 <a href="#none"><img src="../asset/image/common-m/btn_get.png" alt=""></a>
@@ -252,7 +253,7 @@
             </div>
           </div>
            <!-- POP MESSAGE #스토어를 확인할 수 없습니다. OS를 선택해주세요 -->
-          <div class="popup pop-store">
+          <div class="popup pop-store-m">
             <div class="popup-cont">
               <div class="notice-msg">
                 <img src="../asset/image/common-m/text_pop03.png" alt="스토어를 확인할 수 없습니다. OS를 선택해주세요">                
@@ -263,7 +264,7 @@
             </div>
           </div>
           <!-- POP MESSAGE #휴대폰 번호를 정확히 입력해주세요. -->
-          <div class="popup pop-mobile">
+          <div class="popup pop-mobile-m">
             <div class="popup-cont">
               <div class="notice-msg">
                 <img src="../asset/image/common-m/text_pop04.png" alt="휴대폰 번호를 정확히 입력해주세요.">                
@@ -274,7 +275,7 @@
             </div>
           </div>
           <!-- POP MESSAGE #필수항목에 체크해주세요. -->
-          <div class="popup pop-check">
+          <div class="popup pop-check-m">
             <div class="popup-cont">
               <div class="notice-msg">
                 <img src="../asset/image/common-m/text_pop05.png" alt="필수항목에 체크해주세요.">                
@@ -285,7 +286,7 @@
             </div>
           </div>
           <!-- POP MESSAGE #이미 사전예약이 완료된 번호입니다. -->
-          <div class="popup pop-already">
+          <div class="popup pop-already-m">
             <div class="popup-cont">
               <div class="notice-msg">
                 <img src="../asset/image/common-m/text_pop06.png" alt="이미 사전예약이 완료된 번호입니다.">                
@@ -296,18 +297,19 @@
             </div>
           </div>
           <!-- POP MESSAGE #사전예약이 완료되었습니다. -->
-          <div class="popup pop-complete">
+          <div class="popup pop-complete-m">
             <div class="popup-cont">
               <div class="notice-msg">
                 <img src="../asset/image/common-m/text_pop07.png" alt="사전예약이 완료되었습니다.">                
               </div>
               <div class="popup-btn">
                 <a href="#none" class="pop-ok"><img src="../asset/image/common-m/btn_ok.png" alt=""></a>
+                <a href="#none" class="pop-ok"><img src="../asset/image/common-m/btn_home.png" alt=""></a>
               </div>
             </div>
           </div>
           <!-- POP MESSAGE #자세히보기 -->
-          <div class="popup pop-terms">
+          <div class="popup pop-terms-m">
             <div class="popup-cont">
               <a href="#none" class="pop-close"><img src="../asset/image/common-m/btn_close.png" alt=""></a>
               
@@ -318,13 +320,13 @@
           </div>
 
 
-          <div style="z-index: 999;">
+          <div style="z-index: 999; position:absolute; bottom: 0;">
             퍼블리싱 팝업 확인용
-            <a href="#pop-store" class="act-popup" data-target="pop-store">[스토어를 확인할 수 없습니다]</a>
-            <a href="#pop-mobile" class="act-popup" data-target="pop-mobile">[휴대폰 번호를 정확히]</a>
-            <a href="#pop-check" class="act-popup" data-target="pop-check">[필수항목 체크]</a>
-            <a href="#pop-already" class="act-popup" data-target="pop-already">[이미 완료된 번호]</a>
-            <a href="#pop-complete" class="act-popup" data-target="pop-complete">[사전예약 완료]</a>
+            <a href="#pop-store-m" class="act-popup" data-target="pop-store-m">[스토어를 확인할 수 없습니다]</a>
+            <a href="#pop-mobile-m" class="act-popup" data-target="pop-mobile-m">[휴대폰 번호를 정확히]</a>
+            <a href="#pop-check-m" class="act-popup" data-target="pop-check-m">[필수항목 체크]</a>
+            <a href="#pop-already-m" class="act-popup" data-target="pop-already-m">[이미 완료된 번호]</a>
+            <a href="#pop-complete-m" class="act-popup" data-target="pop-complete-m">[사전예약 완료]</a>
           </div>              
            <div class="dimmed"></div>
       </div>

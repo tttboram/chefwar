@@ -139,7 +139,6 @@ body {
       border-radius:15px;
       width: 45%;
       height: 67vh;
-      display: flex;
       border: 2px solid #000;
       margin: 2em 0 0 0;
       display: flex;
@@ -247,6 +246,53 @@ body {
           position: absolute;
           right: 0;
           top: 0;
+        }
+        /* 라벨 스타일링 */
+        .checkbox {
+          display: block;
+          position: relative;
+          /* 기본 checkbox 버튼 숨기기 */
+          input[type="checkbox"] {
+            position: absolute;
+            width: 0;
+            height: 0;
+            opacity: 0;
+          }
+        }
+
+        /* 선택되지 않은 상태 - 기본 스타일 */
+        .checkbox input[type="checkbox"] + label {
+          display: inline-block;
+          position: relative;
+          cursor: pointer;
+          padding-left: 20px;
+          img{
+            height: 12px;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border: 2px solid #fff; /* 파란색 테두리 */
+            border-radius: 12px; /* 둥근 테두리 */
+            pointer-events: none;
+          }
+        }
+
+        /* 선택되었을 때 테두리 효과 */
+        .checkbox input[type="checkbox"]:checked + label::after {
+          content: "";
+          position: absolute;
+          top: 4px;
+          left: 2px;
+          width: 10px;
+          height: 10px;
+          background-color: #f00;
+          border-radius: 12px; /* 둥근 테두리 */
+          pointer-events: none;
         }
       }
       .cnt-action{
@@ -361,11 +407,9 @@ body {
           flex-direction: column;
     }
     .float-logo{
-      position: absolute;
+      position: relative;
       z-index: 100;
-      top: auto;
-      bottom:2em;
-      left:1.5em;
+      padding: 20px 0 0 0;
       img{
         width: 100%;
       }
@@ -387,10 +431,10 @@ body {
       background-color: rgba(0, 0, 0, 0.75);
       border-radius:15px;
       width: 90%;
-      height: 60vh;
-      display: flex;
+      min-height: 50vh;
       border: 2px solid #000;
-      margin: 4em 0 0 0;
+      margin: 6em 0 0 0;
+      padding: 0 0 10px 0;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -409,8 +453,10 @@ body {
       // }
       .cnt-img{
         display: block;
+        overflow: hidden;
         img{
           width: 100%;
+          margin-top: -30px;
         }
       }
       .cnt-device{
@@ -524,8 +570,9 @@ body {
           position: relative;
           cursor: pointer;
           padding-left: 20px;
+          height: 10px;
           img{
-            height: 12px;
+            height: 9px;
           }
           &::before {
             content: "";
@@ -544,10 +591,10 @@ body {
         .checkbox input[type="checkbox"]:checked + label::after {
           content: "";
           position: absolute;
-          top: 2px;
+          top: 4px;
           left: 2px;
-          width: 8px;
-          height: 8px;
+          width: 10px;
+          height: 10px;
           background-color: #f00;
           border-radius: 12px; /* 둥근 테두리 */
           pointer-events: none;
@@ -555,9 +602,19 @@ body {
       }
       .cnt-action{
         padding: 10px 0;
+        text-align: center;
+        img{
+          width: 90%;
+        }
       }
       .cnt-store{
         text-align: center;
+        a{
+          width: 23%;
+          img{
+            width: 100%;
+          }
+        }
       }
     }
     .deco-left{
