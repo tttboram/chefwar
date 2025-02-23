@@ -461,8 +461,8 @@ body {
       }
       .cnt-device{
         display: flex;
-        width: 100%;
-        margin: 0 0 10px 30px;
+        width: calc(100% - 20px);
+        margin: 10px 0 10px 20px;
         /* 라벨 스타일링 */
         .radio {
           display: inline-block;
@@ -632,21 +632,33 @@ body {
       }
       .character-2{
         position: absolute;
-        left: 18.5%;
-        top: 30.5%;
+        left: 33%;
+        top: 17.5%;
         animation: move2 2.5s infinite ease-in-out; /* 애니메이션 적용 */
+        img{
+          width: 75px;
+          height: 91px;
+        }
       }
       .character-3{
         position: absolute;
-        left: 5%;
-        top: 30.5%;
+        left: 12%;
+        top: 15.5%;
         animation: move3 1.5s infinite ease-in-out; /* 애니메이션 적용 */
+        img{
+          width: 153px;
+          height: 153px;
+        }
       }
       .character-4{
         position: absolute;
-        left: -9.5%;
-        top: 53%;
+        left: -18.5%;
+        top: 17%;
         animation: move4 2.5s infinite ease-in-out; /* 애니메이션 적용 */
+        img{
+          width: 215px;
+          height: 182px;
+        }
       }
     }
     .deco-right{
@@ -658,9 +670,13 @@ body {
       height: 100vh;
       .character-1{
         position: absolute;
-        right: 29.5%;
-        top: 27.8%;
+        right: 33.5%;
+        top: 17.8%;
         animation: move11 1.5s infinite ease-in-out; /* 애니메이션 적용 */
+        img{
+          width: 65px;
+          height: 83px;
+        }
       }
       .character-2{
         position: absolute;
@@ -676,9 +692,13 @@ body {
       }
       .character-4{
         position: absolute;
-        right: 1%;
-        top: 37.5%;
+        right: 7%;
+        top: 17.5%;
         animation: move14 1.5s infinite ease-in-out; /* 애니메이션 적용 */
+        img{
+          width: 150px;
+          height: 151px;
+        }
       }
       .character-5{
         position: absolute;
@@ -688,9 +708,13 @@ body {
       }
       .character-6{
         position: absolute;
-        right: -3.3%;
-        top: 53.5%;
+        right: -10.3%;
+        top: 19.5%;
         animation: move12 2.5s infinite ease-in-out; /* 애니메이션 적용 */
+        img{
+          width: 176px;
+          height: 176px;
+        }
       }
     }
   }
