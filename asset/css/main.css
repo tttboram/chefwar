@@ -715,6 +715,7 @@ body {
   }
   .is-mobile .sec-title {
     text-align: center;
+    padding: 30px 0 0 0;
   }
   .is-mobile .sec-title img {
     width: 90%;
