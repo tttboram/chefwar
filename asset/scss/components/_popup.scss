@@ -3,8 +3,10 @@
   display: none;
   z-index: 990;
   position: absolute;
-  top: 0;
-  left: 20px;
+  top: 50% !important;
+  left: 50% !important;
+  transform:translate(-50%, -50%);
+  width: calc(100% - 40px);
   width: 615px;
   border-radius: 8px;
   //overflow: hidden;
