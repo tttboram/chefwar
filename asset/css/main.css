@@ -440,6 +440,33 @@ body {
     top: 1em;
     right: 1.5em;
   }
+  .is-web .sec-title {
+    text-align: center;
+  }
+  .is-web .sec-title .deco-title-01 {
+    display: block;
+    margin: 0 auto;
+    position: inherit;
+    opacity: 0; /* 처음에는 안 보이게 */
+    animation: titleDrop 1.2s ease-in-out forwards; /* 애니메이션 적용 */
+    animation-delay: 0s;
+  }
+  .is-web .sec-title .deco-title-02 {
+    display: block;
+    margin: 0 auto;
+    position: inherit;
+    opacity: 0; /* 처음에는 안 보이게 */
+    animation: titleDrop2 1.2s ease-in-out forwards; /* 애니메이션 적용 */
+    animation-delay: 1s;
+  }
+  .is-web .sec-title .deco-title-03 {
+    display: block;
+    margin: 0 auto;
+    position: inherit;
+    opacity: 0; /* 처음에는 안 보이게 */
+    animation: titleDrop 1.2s ease-in-out forwards; /* 애니메이션 적용 */
+    animation-delay: 1s;
+  }
   .is-web .sec-content {
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.75);
@@ -724,11 +751,35 @@ body {
   }
   .is-mobile .sec-title {
     text-align: center;
-    padding: 50px 0 0 0;
+    padding: 30px 0 0 0;
     z-index: 9;
   }
   .is-mobile .sec-title img {
     width: 90%;
+  }
+  .is-mobile .sec-title .deco-title-01 {
+    display: block;
+    margin: 5px auto;
+    position: inherit;
+    opacity: 0; /* 처음에는 안 보이게 */
+    animation: titleDrop 1.2s ease-in-out forwards; /* 애니메이션 적용 */
+    animation-delay: 0s;
+  }
+  .is-mobile .sec-title .deco-title-02 {
+    display: block;
+    margin: 5px auto;
+    position: inherit;
+    opacity: 0; /* 처음에는 안 보이게 */
+    animation: titleDrop2 1.2s ease-in-out forwards; /* 애니메이션 적용 */
+    animation-delay: 1s;
+  }
+  .is-mobile .sec-title .deco-title-03 {
+    display: block;
+    margin: 5px auto;
+    position: inherit;
+    opacity: 0; /* 처음에는 안 보이게 */
+    animation: titleDrop 1.2s ease-in-out forwards; /* 애니메이션 적용 */
+    animation-delay: 1s;
   }
   .is-mobile .sec-content {
     z-index: 100;
@@ -1392,6 +1443,50 @@ input[type=checkbox]:checked + label:after {
   100% {
     margin-right: 0px;
     margin-top: 0;
+  }
+}
+@keyframes titleDrop {
+  0% {
+    transform: translateY(-50px) scale(0.8); /* 위에서 시작, 작게 */
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(10px) scale(1.1); /* 바운스 효과 */
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(-5px) scale(1); /* 바운스 효과 */
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(5px) scale(1); /* 바운스 효과 */
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1); /* 원래 크기로 */
+    opacity: 1;
+  }
+}
+@keyframes titleDrop2 {
+  0% {
+    transform: translateY(50px) scale(0.8); /* 위에서 시작, 작게 */
+    opacity: 0;
+  }
+  60% {
+    transform: translateY(-10px) scale(1.1); /* 바운스 효과 */
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(5px) scale(1); /* 바운스 효과 */
+    opacity: 1;
+  }
+  80% {
+    transform: translateY(-5px) scale(1); /* 바운스 효과 */
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) scale(1); /* 원래 크기로 */
+    opacity: 1;
   }
 }
 .popup {

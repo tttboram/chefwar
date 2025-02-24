@@ -435,3 +435,52 @@ input[type="checkbox"] {
     margin-top: 0;
   }
 }
+
+//title animation
+@keyframes titleDrop {
+  0% {
+      transform: translateY(-50px) scale(0.8); /* 위에서 시작, 작게 */
+      opacity: 0;
+  }
+  60% {
+      transform: translateY(10px) scale(1.1); /* 바운스 효과 */
+      opacity: 1;
+  }
+  70% {
+      transform: translateY(-5px) scale(1); /* 바운스 효과 */
+      opacity: 1;
+  }
+  80% {
+      transform: translateY(5px) scale(1); /* 바운스 효과 */
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(0) scale(1); /* 원래 크기로 */
+      opacity: 1;
+  }
+}
+//title animation
+@keyframes titleDrop2 {
+  0% {
+      transform: translateY(50px) scale(0.8); /* 위에서 시작, 작게 */
+      opacity: 0;
+  }
+  60% {
+      transform: translateY(-10px) scale(1.1); /* 바운스 효과 */
+      opacity: 1;
+  }
+  70% {
+      transform: translateY(5px) scale(1); /* 바운스 효과 */
+      opacity: 1;
+  }
+  80% {
+      transform: translateY(-5px) scale(1); /* 바운스 효과 */
+      opacity: 1;
+  }
+  100% {
+      transform: translateY(0) scale(1); /* 원래 크기로 */
+      opacity: 1;
+  }
+}
+
+
