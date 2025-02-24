@@ -108,9 +108,9 @@ body {
   }
   .is-web{
     display: block;
-    &:after{
+    &:before{
       content:"";
-      z-index: 500;
+      z-index: 100;
       background:url("../../asset/image/common/deco_leaf.png") no-repeat 0 0;
       background-size: contain;
       width: 35%;
@@ -148,7 +148,7 @@ body {
       text-align: center;
       .deco-title-01{
         display: block;
-        margin: 0 auto;
+        margin: 5px auto;
         position: inherit;
         opacity: 0; /* 처음에는 안 보이게 */
         animation: titleDrop 1.2s  ease-in-out forwards; /* 애니메이션 적용 */
@@ -156,7 +156,7 @@ body {
       }
       .deco-title-02{
         display: block;
-        margin: 0 auto;
+        margin: 5px auto;
         position: inherit;
         opacity: 0; /* 처음에는 안 보이게 */
         animation: titleDrop2 1.2s  ease-in-out forwards; /* 애니메이션 적용 */
@@ -164,7 +164,7 @@ body {
       }
       .deco-title-03{
         display: block;
-        margin: 0 auto;
+        margin: 5px auto;
         position: inherit;
         opacity: 0; /* 처음에는 안 보이게 */
         animation: titleDrop 1.2s  ease-in-out forwards; /* 애니메이션 적용 */
