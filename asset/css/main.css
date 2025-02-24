@@ -416,6 +416,18 @@ body {
   .is-web {
     display: block;
   }
+  .is-web:after {
+    content: "";
+    z-index: 500;
+    background: url("../../asset/image/common/deco_leaf.png") no-repeat 0 0;
+    background-size: contain;
+    width: 35%;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
   .is-web.main-bg {
     position: relative;
     height: 100vh;
@@ -479,18 +491,6 @@ body {
     align-items: center;
     flex-direction: column;
     overflow: auto;
-  }
-  .is-web .sec-content:after {
-    content: "";
-    z-index: 500;
-    background: url("../../asset/image/common/deco_leaf.png") no-repeat 0 0;
-    background-size: contain;
-    width: 35%;
-    height: 100vh;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
   }
   .is-web .sec-content .cnt-img {
     display: block;
@@ -879,6 +879,7 @@ body {
     border: none;
     text-align: center;
     font-size: 24px;
+    border-radius: 0;
   }
   .is-mobile .sec-content .cnt-checklist {
     position: relative;
