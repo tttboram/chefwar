@@ -482,5 +482,44 @@ input[type="checkbox"] {
       opacity: 1;
   }
 }
+//sparkle
+@keyframes sparkle {
+  0% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+      opacity: 0.8;
+      transform: translate(-50%, -50%) scale(1.1);
+  }
+  100% {
+      opacity: 0.5;
+      transform: translate(-50%, -50%) scale(1);
+  }
+}
 
+//banner
+@keyframes floating {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-10px); /* 이동 */
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
 
+//twinkle
+@keyframes twinkle {
+  0% {
+    opacity: 0.5;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+      opacity: 0.5;
+  }
+}
