@@ -484,7 +484,7 @@ body {
     background-color: rgba(0, 0, 0, 0.75);
     border-radius: 15px;
     width: 45%;
-    height: 67vh;
+    height: 600px;
     border: 2px solid #000;
     margin: 2em 0 0 0;
     display: flex;
@@ -494,6 +494,7 @@ body {
   }
   .is-web .sec-content .cnt-img {
     display: block;
+    margin-top: -35px;
   }
   .is-web .sec-content .cnt-device {
     display: flex;
@@ -546,11 +547,11 @@ body {
     pointer-events: none;
   }
   .is-web .sec-content .cnt-input {
-    width: 590px;
+    width: 494px;
     position: relative;
   }
   .is-web .sec-content .cnt-input .input-010 {
-    height: 70px;
+    height: 58px;
   }
   .is-web .sec-content .cnt-input .input-cover {
     position: absolute;
@@ -561,18 +562,18 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    width: 450px;
-    height: 70px;
+    width: 374px;
+    height: 58px;
     padding: 0;
     margin: 0;
     border: none;
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
   }
   .is-web .sec-content .cnt-checklist {
     position: relative;
     text-align: left;
-    width: 61%;
+    width: 69%;
     margin: 10px 0;
     /* 라벨 스타일링 */
     /* 선택되지 않은 상태 - 기본 스타일 */
