@@ -511,7 +511,7 @@ body {
     width: 45%;
     height: 600px;
     border: 2px solid #000;
-    margin: 2em 0 0 0;
+    margin: 1em 0;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -594,7 +594,7 @@ body {
     pointer-events: none;
   }
   .is-web .sec-content .cnt-input {
-    width: 494px;
+    width: 530px;
     position: relative;
   }
   .is-web .sec-content .cnt-input .input-010 {
@@ -602,14 +602,14 @@ body {
   }
   .is-web .sec-content .cnt-input .input-cover {
     position: absolute;
-    right: 0;
+    right: 20px;
     top: 0;
   }
   .is-web .sec-content .cnt-input .input-here {
     position: absolute;
     right: 0;
     top: 0;
-    width: 374px;
+    width: 414px;
     height: 58px;
     padding: 0;
     margin: 0;
@@ -929,26 +929,26 @@ body {
     position: relative;
   }
   .is-mobile .sec-content .cnt-input .input-010 {
-    height: 33px;
-    width: 70px;
+    height: 50px;
+    width: 100px;
   }
   .is-mobile .sec-content .cnt-input .input-cover {
     position: absolute;
     right: 0;
-    top: 0;
-    height: 33px;
+    top: 7px;
+    height: 37px;
   }
   .is-mobile .sec-content .cnt-input .input-here {
     position: absolute;
     right: 0;
     top: 0;
-    width: calc(100% - 70px);
-    height: 34px;
+    width: calc(100% - 100px);
+    height: 50px;
     padding: 0;
     margin: 0;
     border: none;
     text-align: center;
-    font-size: 24px;
+    font-size: 34px;
     border-radius: 0;
   }
   .is-mobile .sec-content .cnt-checklist {
