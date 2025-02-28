@@ -620,7 +620,7 @@ body {
   .is-web .sec-content .cnt-checklist {
     position: relative;
     text-align: left;
-    width: 69%;
+    width: 100%;
     margin: 10px 0;
     /* 라벨 스타일링 */
     /* 선택되지 않은 상태 - 기본 스타일 */
